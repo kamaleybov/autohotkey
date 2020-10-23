@@ -106,7 +106,7 @@ return
 ;*** Create a new chrome window [Win + Space]
 ;*************************************************************************************
 #space::
-    Run, chrome.exe --explicitly-allowed-ports=563 --new-window, , Max, chromeWindowId
+    Run, chrome.exe --explicitly-allowed-ports=563 --new-window --profile-directory=Default, , Max, chromeWindowId
     WinActivate, New Tab - Google Chrome
     WinWait, New Tab - Google Chrome
     Send {End}
